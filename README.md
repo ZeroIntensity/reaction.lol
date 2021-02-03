@@ -2,6 +2,8 @@
 
 ## Credits
 
+**Development Server:** https://reactionlol.zerointensity.repl.co
+
 ### Developers
 
 Built by [ZeroIntensity](https://github.com/ZeroIntensity) and [2331puppy](https://github.com/2231puppy)

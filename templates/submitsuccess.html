@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>TryIt - reaction.lol</title>
+    <title>Submit - reaction.lol</title>
 <meta property="og:title" content="Reaction Image API">
 <meta property="og:description" content="Get one of {{ imagecount }} reaction images instantly!">
 <meta property="og:type" content="article">
@@ -24,9 +24,20 @@
 
   </head>
   <body>
-<div class="container text-center" style="margin-top: 10%">
-<img src="{{ img }}" class="rounded img-fluid" style="max-width: 50%;">
+<div class="container text-center" style="margin-top: 5%;">
+<div class="alert alert-success alert-dismissible">
+  <strong>Success!</strong> Your request has been submitted
+</div>
+  <h1 class="display-3">Submit Image</h1>
+  <h1 class="display-4" style="font-size: 150%">Request an image to be added to the API</h1>
 
+<a style="margin-top: 1%;" href="https://reaction.lol" class="btn btn-lg btn-outline-success" role="button">Go Back Home</a>
 
+<div class="form-group display-4" style="margin-top: 3%; font-size: 250%;">
+  <label for="imgurl">Image Link: </label>
+  <form action="/submiturl" method = "POST"><input name = "imgurl" type="text" placeholder="example.com/img..." class="form-control" id="imgurl" required>
+  <button type="submit" class="btn btn-primary">Submit</button></form>
+</div>
+</div>
   </body>
 </html>
