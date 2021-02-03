@@ -5,6 +5,7 @@ from flask import request, jsonify, render_template
 import random
 import os
 import string
+from reaction_lol import getimage
 app = flask.Flask(__name__)
 
 imagecount = len(os.listdir('images'))
@@ -24,7 +25,7 @@ def api_all():
       returned.update(image)
     return jsonify(returned)
 
-@app.route('/get-<args>', methods=['GET'])
+@app.route('/get?<args>', methods=['GET'])
 def api_custom(args):
   returned = {}
   for i in os.listdir('images'):
@@ -37,6 +38,9 @@ def api_custom(args):
     return jsonify(returned)
   return jsonify(returned)
 
+@app.route('/tryit')
+def tryit():
+  return render_template('tryit.html', img=getimage())
 
 
 letters = string.ascii_letters

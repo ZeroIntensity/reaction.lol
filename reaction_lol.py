@@ -6,7 +6,7 @@ def getimage(args=None):
     response = response.json()
     return response.get('url')
   else:
-    response = requests.get(f'https://reaction.lol/get-{args}')
+    response = requests.get(f'https://reaction.lol/get?{args}')
     response = response.json()
     if response == 404:
       return 404

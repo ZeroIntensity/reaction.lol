@@ -1,4 +1,4 @@
-# Last Updated: 1/31/21
+# Last Updated: 2/3/21
 
 ## Credits
 
@@ -20,8 +20,8 @@ To get images from the API, we recommend using the `reaction_lol.py` for python.
 |Route|Notes|
 |----|-----|
 |`https://reaction.lol/image`|Gets a random image link. Returns a `json` object with `url` as the key to get the URL of the image.|
-|`https://reaction.lol/all`|Gets every image stored URL in the database. Returns a `json` object with the image ID as the key.|
-|`https://reaction.lol/get-{image ID}`|Gets a specified image based on its ID. Returns a `json` object with `url` as the key to get the URL of the image. If its not found, it returns `404`.|
+|`https://reaction.lol/all`|Gets every stored URL in the database. Returns a `json` object with the image ID as the key.|
+|`https://reaction.lol/get?{image ID}`|Gets a specified image based on its ID. Returns a `json` object with `url` as the key to get the URL of the image. If its not found, it returns `404`.|
 
 ### Using the file
 
