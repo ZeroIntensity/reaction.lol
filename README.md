@@ -4,6 +4,8 @@
 
 **Development Server:** https://reactionlol.zerointensity.repl.co
 
+**Note:** Submit is currently not working due to an error when commiting to the server. It is currently being fixed.
+
 ### Developers
 
 Built by [ZeroIntensity](https://github.com/ZeroIntensity) and [2331puppy](https://github.com/2231puppy)
